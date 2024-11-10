@@ -1,0 +1,56 @@
+.programs-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allows wrapping for responsiveness */
+    margin: 300px; /* Adjust margin to ensure responsiveness */
+  }
+  
+  .program-card {
+    background-color: white;
+    padding: 20px; /* Reduced padding for better responsiveness */
+    width: calc(33.333% - 20px); /* Three cards per row with margin space */
+    height: 230px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 10px; /* Margin for spacing between cards */
+    transition: transform 0.3s ease; /* Smooth scaling transition */
+  }
+  
+  .program-card h3 {
+    margin-bottom: 20px; /* Adjusted for better spacing */
+  }
+  
+  .program-card p {
+    margin-bottom: 20px; /* Adjusted for better spacing */
+  }
+  
+  .program-card a {
+    color: #07db2a;
+    text-decoration: none;
+  }
+  
+  .program-card:hover {
+    transform: scale(1.05); /* Slightly smaller scale for a subtle effect */
+  }
+  
+  /* Media query for tablets (portrait and landscape) */
+  @media (max-width: 992px) {
+    .program-card {
+      width: calc(50% - 20px); /* Two cards per row with margin space */
+    }
+  }
+  
+  /* Media query for mobile devices */
+  @media (max-width: 600px) {
+    .programs-container {
+      margin: 20px; /* Adjust margin for mobile devices */
+      justify-content: center; /* Center cards on small screens */
+    }
+  
+    .program-card {
+      width: calc(100% - 20px); /* Full width with margin space */
+      padding: 15px; /* Reduced padding for mobile */
+    }
+  }
+  

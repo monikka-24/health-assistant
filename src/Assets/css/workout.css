@@ -1,0 +1,81 @@
+.workout-page {
+  text-align: center;
+  margin: 20px;
+}
+
+.search-box {
+  margin: 20px 0;
+}
+
+.search-box form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-box input {
+  padding: 10px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search-box button {
+  padding: 10px 20px;
+  margin-left: 10px;
+  border: none;
+  background-color: #DB6407;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.exercise-results {
+  display: flex; /* Use flexbox layout */
+  flex-wrap: wrap; /* Allow items to wrap to the next line */
+  justify-content: space-between; /* Space items evenly */
+  gap: 20px; /* Add gap between cards for consistent spacing */
+  margin-top: 20px;
+}
+
+.exercise-item {
+  flex: 1 0 30%; /* Ensure three items per row with consistent width */
+  max-width: 30%; /* Limit max width for better control */
+  background-color: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-bottom: 20px; /* Add margin below for spacing between rows */
+}
+
+.exercise-gif {
+  width: 100%;
+  height: 300px; 
+  object-fit: contain; 
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.exercise-item h3 {
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+.exercise-item p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.exercise-item p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.search-help {
+  text-align: center;
+  width: 100%;
+  margin: 20px 0;
+  font-size: 1.2em;
+  font-weight: bold;
+}

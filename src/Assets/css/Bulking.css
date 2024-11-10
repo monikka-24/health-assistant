@@ -1,0 +1,93 @@
+/* Premium Styling for Bulking Program */
+.bulking {
+    text-align: center;
+    padding: 40px;
+    background: linear-gradient(135deg, #f3f4f6, #ffffff);
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 1200px;
+  }
+  
+  /* Heading Styles */
+  .bulking h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+  
+  .bulking h2 {
+    font-size: 2rem;
+    color: #444;
+    margin-bottom: 15px;
+    font-weight: 600;
+  }
+  
+  /* Container for plans with grid layout */
+  .plans-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  /* Styling for each day plan card */
+  .day-plan {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+  
+  .day-plan:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+  }
+  
+  .day-plan h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  /* Styling for exercise cards within each plan */
+  .exercises {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  /* Individual exercise card styling */
+  .exercise-card {
+    margin: 10px 0;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .exercise-card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Image styling within exercise cards */
+  .exercise-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 8px;
+  }
+  
+  /* Paragraphs inside exercise cards */
+  .exercise-card p {
+    font-size: 1rem;
+    color: #555;
+  }
+  

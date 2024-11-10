@@ -1,0 +1,201 @@
+/* .search-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .search-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .search-input {
+    width: 100%;
+    max-width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .search-input:focus {
+    border-color: #07db2a;
+    box-shadow: 0 0 5px rgba(47, 69, 49, 0.5);
+  }
+  
+  .search-input::placeholder {
+    color: #888;
+    font-style: italic;
+  }
+  
+  .search-button {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    margin-left: 10px;
+    background-color: #07db2a;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .search-button:hover {
+    background-color: 07db2a;
+  }
+  
+  .results-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .results-container .card {
+    width: 300px; 
+  }
+
+  */
+
+  /* src/Assets/css/Trainers.css */
+
+.search-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px auto; /* Adjusted margin for better spacing */
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #333;
+  }
+  
+  .search-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .search-input {
+    width: 100%;
+    max-width: 350px; /* Slightly larger max-width for a more premium look */
+    padding: 12px 16px; /* Increased padding for better appearance */
+    font-size: 16px;
+    border: none;
+    outline: none;
+    border-radius: 0;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .search-input:focus {
+    border-color: #07db2a;
+    box-shadow: 0 0 8px rgba(47, 69, 49, 0.4);
+  }
+  
+  .search-input::placeholder {
+    color: #aaa;
+    font-style: italic;
+  }
+  
+  .search-button {
+    padding: 12px 20px; /* Increased padding for a more prominent button */
+    font-size: 16px;
+    border: none;
+    border-radius: 0;
+    background-color: #07db2a;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .search-button:hover {
+    background-color: #05a32a;
+    transform: scale(1.05);
+  }
+  
+  /* Grid layout for search results */
+  .results-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three cards per row */
+    gap: 100px; /* Increased gap for a premium look */
+    justify-content: center;
+    padding: 20px;
+    max-width: 1200px; /* Max width to keep cards centered */
+    margin: 0 auto;
+  }
+  
+  /* Styling for cards */
+  .results-container .card {
+    background-color: #fff;
+    border-radius: 12px; /* Enhanced border radius */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%; /* Full width of grid cell */
+    max-width: 320px; /* Max width for cards */
+    margin: 0 auto; /* Center card horizontally */
+  }
+  
+  .card-image-container {
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  
+  .card-image {
+    width: 100%;
+    height: 180px; /* Adjusted height for images */
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .card-image-container:hover .card-image {
+    transform: scale(1.05);
+  }
+  
+  .card-content {
+    padding: 16px;
+  }
+  
+  .card-content h3 {
+    font-size: 1.25rem; /* Adjusted font size */
+    margin: 10px 0;
+    color: #333;
+  }
+  
+  .card-content .category {
+    color: #888;
+    margin: 5px 0;
+    font-size: 0.9rem;
+  }
+  
+  .card-content .description {
+    color: #666;
+    margin: 10px 0;
+    font-size: 0.85rem; /* Slightly smaller font size */
+  }
+  
+  .book-button {
+    display: inline-block;
+    padding: 12px 24px; /* Larger padding for better appearance */
+    background-color: #07db2a;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .book-button:hover {
+    background-color: #05a32a;
+    transform: scale(1.05);
+  }
+  
